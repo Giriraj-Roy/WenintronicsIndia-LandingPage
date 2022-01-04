@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
+.contactBar{
+    z-index : 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7vh;
+    min-height: calc((57/1920)vw);
+    min-width: fit-content;
+    color: #FFFFFF;
+    font-family: Poly;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3vh;
+    line-height: 119.5%;
+    overflow: auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contactPanel > *{
+    padding: 1.5vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mediaArrow {
+    border: solid red;
+    border-width: 0 0.5vh 0.5vh 0;
+    display: inline-block;
+    padding: 0.5vh;
+    margin-bottom: 0.5vh;
+    margin-left: 1vh;
+    transform: rotate(45deg);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .navbar{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    left: 0px;
+    top: 7vh;
+    overflow-y: auto;    
+    background: #0B090A;
+    color: #FFFFFF;
+    font-family: Poly;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3vh;
+    line-height: 119.5%;
   }
-  to {
-    transform: rotate(360deg);
+.navPanel > *{
+    margin: 4vh;
+    padding: 0.2vh;
+}
+  .navPanel{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: fit-content;
+    left: 18vw ;
+    margin: auto;
   }
+  .navAbout{
+    color: white;
+    border-bottom: 0.5vh solid rgba(255, 0, 0, 0);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    
+  }
+  .navAbout:hover{
+    /* border-bottom: red solid 2px; */
+    border-bottom: 0.5vh solid rgba(255, 0, 0, 1);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    transition: ease-in 0.2s;
+  }
+  .navStore{
+    color: white;
+    border-bottom: 0.5vh solid rgba(255, 0, 0, 0);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    
+  }
+  .navStore:hover{
+    /* border-bottom: red solid 2px; */
+    border-bottom: 0.5vh solid rgba(255, 0, 0, 1);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    transition: ease-in 0.2s;
+  }
+
+  .btnDealer{
+    background: #DB1218;
+    height: 6vh ;
+    color: #FFFFFF;
+    font-family: Poly;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3vh;
+    line-height: 119.5%;
+    border: 0px;
+    margin-top: 3vh;
+    margin-right: 1.5vh;
+    padding: 1vh;
+  }
+  .btnDealer:hover{
+    background-color: wheat;
+    color: black;
+    transition-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+  .rectOuter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7.5vh;
+    width: 7.5vh;
+    position: absolute;
+    left: 7vw;
+    top: 4vh;
+    border-radius: 0px;
+    background-color: #FFFFFF;
+  }
+  .rectInner{
+    display: flex;
+    height: 3vh;
+    width: 3vh;
+    position: absolute;
+    border: solid red;
+    border-radius: 0px;
+    border-width: 1vh;
+  }
+  .scooterImage{
+    display: flex;
+    position: relative;
+    width: 50vw;
+    height: fit-content;
+    /* top: 30vh; */
+    /* margin: auto; */
+    margin-left: 20%;
+  }
+  .details{
+     display: flex;
+     position: relative;
+     top: 30vh;
+  }
+  .description{
+    margin-left: 15vw;
+    display: table;
+    position: relative;
+    top: 10vh;
+    
+  }
+  .detailsHead{
+    width: 21vw;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8vh;
+    line-height: 119.5%;
+    color: #000000;
+  }
+  .detailsDescribed{
+    width: 30vw;
+    font-family: Poly;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.8vh;
+    line-height: 119.5%;
+    text-align: justify;
+  }
+  .showDetails{
+    background-color: #DB1218;
+    color: white;
+    width: 12vw;
+    border-width: 0px;
+    font-size: 2.9vh;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1vh;
+  }
+  .showDetails:hover{
+    background-color: black;
+    transition-duration: 0.8s;
+  }
+  .scooterMenu{
+    display: flex;
+    position: relative;
+    /* align-items: center; */
+    justify-content: center;
+    width: 100vw;
+    height: 15vh;
+    margin: 0px;
+    top: 21vh;
+    left: 0px;
+    background-color: rgb(209, 205, 205);
+    color: gray;
+    font-size: 5vh;
+  }
+  .scooterMenu > *{
+    margin: auto;
+    padding: 0.2vh;
+    width: fit-content;
+  }
+  .scooterMenu > *:hover{
+    color: black;
+    border-bottom: 0.5vh solid rgba(255, 0, 0, 1);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    transition: ease-in 0.1s;
+    
+  } 
+.footer > *{
+  display: inline-flex;
+  position: relative;
+  top: 33vh;
+  left: 50vw;
+  border: 0.6vw solid #D3D3D3;
+  border-radius: 1vw;
+  background-color: #D3D3D3;
+  margin: 0.5vw;
 }
